@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+        width: 1200px;
+        height: 300px;
+        border: 2px solid black;
+
+        .headerTitle {
+            font-size: 55px;
+        }
+
+        .top-section {
+            border: 2px solid black;
+            width: 1000px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .resultContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .result {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 5px;
+                    border: 2px solid orange;
+                    border-radius: 10px;
+                    width: 700px;
+                    height: 40px;
+                }
+
+                .btn-generate {
+                    width: 150px;
+                    height: 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .botom-section {
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 100px;
+            padding: 5px;
+
+            .menuContainer {
+                width: 1100px;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                .line {
+                    width: 1085px;
+                    height: 8px;
+                    border: 2px solid black;
+                    border-radius: 25px;
+
+                    .colorLine {
+                        width: 100%;
+                        height: 4px;
+                        background-color: red;
+                    }
+                }
+
+                .container {
+                    width: 1085px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .option {
+                        width: auto;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        .passwordLength {
+                            height: 40px;
+                            border-radius: 5px;
+                            font-size: 20px;
+                        }
+                        .checkbox {
+                            width: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

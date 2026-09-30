@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-
-    <h1 class="title">Passwoed generator</h1>
-
-    <div class="conteiner">
-        <input type="number" value="0" class="passwordLenght" id="passwordLenght">
-        <input type="checkbox" class="includeLowercase" id="includeLowercase">
-        <input type="checkbox" class="includeUppercase" id="includeUppercase">
-        <input type="checkbox" class="includeNumber" id="includeNumber">
-        <input type="checkbox" class="includeSymbols" id="includeSymbols">
-        <button onclick="generatePassword()" class="generator" id="generator">Generate password</button>
-    </div>
-
-    <p class="result" id="result"></p>
-
-
+    <header>
+        <h1 class="headerTitle"><span>Generate </span> secure password</h1>
+        <section class="top-section">
+            <div class="resultContainer">
+                <p class="result" id="result">Press "Generate" button to create a password</p>
+                <button type="button" onclick="generatePassword()" class="btn-generate">Generate</button>
+            </div>
+        </section>
+        <section class="botom-section">
+            <div class="menuContainer">
+                <div class="line">
+                    <div class="colorLine"></div>
+                </div>
+                <div class="container">
+                    <label class="option">
+                        <span>Password length</span>
+                        <input type="number" class="passwordLength" id="passwordLength" name="passwordLength" min="4" max="64" value="16">
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" class="checkbox" id="upperCase">
+                        <span>Uppercase [A - Z]</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" class="checkbox" id="lowerCase">
+                        <span>Lowercase letters (a - z)</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" class="checkbox" id="digits">
+                        <span>Digits [9 - 0]</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" class="checkbox" id="symbols">
+                        <span>Symbols ~!@#$%^&*()_+|?/\=-</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
+
+</html>
